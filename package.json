@@ -1,0 +1,51 @@
+{
+  "name": "mywork",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "webpack --watch",
+    "postinstall": "gulp copyLibs",
+    "start": "cd server && node server.js"
+  },
+  "author": "Jari",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "add-react-component": "^1.1.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
+    "cli": "^1.0.1",
+    "client": "0.0.1",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "global": "^4.4.0",
+    "gulp": "^4.0.2",
+    "gulp-install": "^1.1.0",
+    "gulp-less": "^4.0.1",
+    "input": "^1.0.1",
+    "jquery": "^3.5.1",
+    "less": "^4.1.1",
+    "mysql": "^2.18.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "chai": "^4.3.3",
+    "mocha": "^8.3.2",
+    "ncp": "^2.0.0",
+    "rimraf": "^3.0.2",
+    "vinyl-source-stream": "^2.0.0",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
