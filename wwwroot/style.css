@@ -1,0 +1,15 @@
+html{
+    background-image:url(/images/kuva.png);
+    background-size: center;
+}
+#klikkaa {
+background-color: green;
+}
+
+#klikkaa2{
+    background-color: red;
+}
+h2 {
+    color: blue;
+    
+}

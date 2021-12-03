@@ -15,10 +15,7 @@ app.get('/api/pelit',async function(req,resp){
     resp.json(await daoGetAll()); 
 });
 
-app.get('/api/asiakkaat',async function(req,resp){
-    console.log("toinen Kysely");
-    resp.json(await daoGetAllAsiakkaat()); 
-});
+
 
 const mysql=require('./mysqlhelper');
 
@@ -27,13 +24,6 @@ function daoGetAll(){
         mysql.query('SELECT * from pelit').then(pelit => resolve(pelit));
     })
 }
-
-function daoGetAllAsiakkaat(){
-    return new Promise(resolve	=> {
-        mysql.query('SELECT * from asiakkaat').then(asiakkaat => resolve(asiakkaat));
-    })
-}
-
 
 app.post('/api/pelit',async function(req,resp){
     let a=req.body;
@@ -63,10 +53,7 @@ function daoGet(id){
         
 }
 
-function deletepelit(id){
-    let q=`DELETE pelit WHERE id=?`;
-    return ms.paramQuery(q,[id]);
-}
+
 
 
 app.listen(serverPort);

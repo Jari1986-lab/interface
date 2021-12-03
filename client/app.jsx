@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 
 import {HTTP} from './http';
 
-//import { asiakkaat } from './app.asiakkaat.jsx';
-
  
 class ValitsePeli extends React.Component{
     constructor(props){
